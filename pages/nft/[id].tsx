@@ -32,7 +32,7 @@ function NFTDropPage() {
 
       <div className="flex flex-col flex-1 p-12 lg:col-span-6">
         {/* Header */}
-        <header className="flex items-center justify-between">
+        <header className="flex items-center justify-between p-2 rounded-lg bg-gradient-to-b from-white to-slate-200">
           <h1 className="text-xl cursor-pointer w-52 font-extralight text-shadow-md sm:w-80">
             The{' '}
             <span className="font-extrabold underline text-cyan-700/70 decoration-cyan-800/60 underline-offset-2">
@@ -43,7 +43,7 @@ function NFTDropPage() {
 
           <button
             onClick={() => (address ? disconnect() : connectWithMetamask())}
-            className="px-4 py-2 text-xs font-bold text-white rounded-xl bg-cyan-700/70 lg:px-5 lg:py-3 lg:text-base"
+            className="px-4 py-2 text-xs font-bold text-white rounded-xl bg-cyan-700/70 hover:shadow-lg lg:px-5 lg:py-3 lg:text-base"
           >
             {address ? 'Sign Out' : 'Sign In'}
           </button>
@@ -75,7 +75,7 @@ function NFTDropPage() {
         </div>
 
         {/* Button */}
-        <button className="w-full h-16 mt-8 text-xl font-bold text-white bg-gray-600 rounded-xl">
+        <button className="w-full h-16 mt-8 text-xl font-bold text-white rounded-xl bg-gradient-to-br from-gray-700 to-cyan-700/70 hover:shadow-lg">
           Mint NFT (0.01 ETH)
         </button>
       </div>
